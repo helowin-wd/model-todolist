@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="src/css/common.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="list-hd">
+        <h2>TOdoList</h2>
+        <a href="javascript:;" class="j-plus-input fa fa-plus"></a>
+      </div>
+      <div class="input-wrap">
+        <div class="input-bd">
+          <input type="text" id="textInput" />
+        </div>
+        <div class="btn-bd">
+          <button class="j-add-item">增加项目</button>
+        </div>
+      </div>
+
+      <div class="list-wrap">
+        <ul class="j-list list"></ul>
+      </div>
+    </div>
+
+    <!-- type 类型只要不是 javascript  就跑不通-->
+    <script type="text/tpl" id="listTpl">
+      <div class="box">
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+      </div>
+    </script>
+
+    <script type="text/javascript" src="src/js/utils.js"></script>
+    <script type="text/javascript" src="src/js/index.js"></script>
+  </body>
+</html>
